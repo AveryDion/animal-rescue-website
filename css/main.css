@@ -31,7 +31,7 @@ header {
 
 .nav-check {
   position: absolute;
-  top: -8em;
+  top: -10em;
 }
 
 .nav-check:checked ~ .nav {
@@ -44,7 +44,7 @@ header {
   display: inline-block;
   position: absolute;
   right: 20px;
-  bottom: 20px;
+  bottom: 32px;
 }
 
 .nav-open,
@@ -83,6 +83,10 @@ input {
 
   .nav-open {
     display: none;
+  }
+
+  .nav-label {
+    bottom: 200px;
   }
 
   .nav {
