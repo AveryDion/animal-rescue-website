@@ -31,7 +31,7 @@ header {
 
 .nav-check {
   position: absolute;
-  top: -10em;
+  top: 0;
 }
 
 .nav-check:checked ~ .nav {
@@ -44,7 +44,7 @@ header {
   display: inline-block;
   position: absolute;
   right: 20px;
-  bottom: 32px;
+  bottom: 55px;
 }
 
 .nav-open,
@@ -77,9 +77,16 @@ header {
 
 input {
   border-color: #fff;
+  border: 1px solid #448a87;
+  width: 50%;
 }
 
 .home {
+  text-decoration: none;
+  color: #fff;
+}
+
+a {
   text-decoration: none;
   color: #fff;
 }
@@ -93,11 +100,6 @@ dt {
 footer {
   background-color: #448a87;
   color: #fff;
-}
-
-input {
-  border: 1px solid #448a87;
-  width: 50%;
 }
 
 fieldset {

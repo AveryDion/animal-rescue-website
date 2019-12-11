@@ -29,8 +29,8 @@
         <h1 class="peta inline pad-t pad-b gutter">Misty Creek Dog Rescue</h1>
       </div>
       <div class="gutter-1-2">
-        <nav role="navigation" id="nav" tabindex="0">
-          <input type="checkbox" class="nav-check" id="nav-check" required>
+        <nav role="navigation" id="nav" tabindex="0" class="relative">
+          <input type="checkbox" class="nav-check visually-hidden box" id="nav-check" name="nav-check" required>
           <label class="nav-label" for="nav-check">
             <span class="bold visually-hidden">Navigate</span>
             <img class="nav-open" src="images/nav-icon.svg" alt="Open Navigation">
@@ -96,10 +96,13 @@
   </main>
 
   <footer role="contentinfo" id="footer" tabindex="0" class="gutter pad-b-1-2 pad-t-1-2">
-    <p class="push-0 bold pad-b-1-2">© 2019 Misty Creek Dog Rescue all rights reserved</p>
-    <i class="icon i-1">
-      <img class="img-flex" src="images/facebook.svg" alt="">
-    </i>
+    <a href="#">
+      <i class="icon i-1">
+        <img class="img-flex" src="images/facebook.svg" alt="">
+      </i>
+      <p class="bold inline">Misty Creek Dog Rescue</p>
+    </a>
+    <p class="push-0 bold pad-t pad-b-1-2">© 2019 Misty Creek Dog Rescue all rights reserved</p>
   </footer>
 
 </body>
