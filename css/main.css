@@ -79,6 +79,22 @@ input {
   border-color: #fff;
 }
 
+.home {
+  text-decoration: none;
+  color: #fff;
+}
+
+dt {
+  float: left;
+  clear: left;
+  width: 100px;
+}
+
+footer{
+  background-color: #448a87;
+  color: #fff;
+}
+
 @media only screen and (min-width: 38em) {
 
   .nav-open {
