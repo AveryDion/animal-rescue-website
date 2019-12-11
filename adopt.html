@@ -12,9 +12,16 @@
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="#banner">Jump to banner</a></li>
+    <li><a href="#footer">Jump to footer</a></li>
+  </ul>
+
+  <header role="banner" id="banner" tabindex="0">
     <div>
-      <div>
+      <div class="gutter">
         <i class="icon i-96">
           <img class="inline" src="images/logo.svg" alt="">
         </i>
@@ -41,28 +48,89 @@
     </div>
   </header>
 
-  <main>
-    <div class="embed embed-3by2">
-      <img class="img-flex embed-item" src="images/adopt-banner.jpg" alt="Picture of a dog">
-      <div class="banner-content max-length pin-tl gutter">
-        <p class="tena pad-t-2">Adopt a homeless dog today!</p>
-        <p class="exa">Find your new best friend!</p>
-        <a class="btn exa bold" href="rescues.html">View our dogs!</a>
+  <main role="main" id="main" tabindex="0">
+    <article>
+      <div class="grid">
+        <div class="embed unit s-1 embed-3by2">
+          <img class="img-flex embed-item" src="images/adopt-banner.jpg" alt="Picture of a dog">
+          <div class="banner-content max-length pin-tl gutter">
+            <p class="tena pad-t-2">Adopt a homeless dog today!</p>
+            <p class="exa">Find your new best friend!</p>
+            <a class="btn exa bold" href="rescues.html">View our dogs!</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <h1>Adopt a Dog!</h1>
+      <section>
+        <h1 class="gutter">Adopt a Dog!</h1>
+        <div class="gutter pad-b-2">
+          <form method="POST" action="https://formspree.io/dion0114@algonquinlive.com">
+            <label for="dog-name">Dog name you are interested in</label>
+            <input id="dog-name" name="dog-name" required>
+            <label for="name">Full name</label>
+            <input id="name" name="name" required>
+            <label for="address">Address</label>
+            <input id="address" name="address" required>
+            <label for="city">City</label>
+            <input id="city" name="city" required>
+            <label for="postal">Postal code</label>
+            <input id="postal" name="postal" required>
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" required>
+            <label for="email">Email</label>
+            <input id="email" name="email" required>
+
+            <fieldset class="push-1-2">
+              <legend class="push-1-8 pad-t not-bold">Have you adopted from us before?</legend>
+              <input type="radio" id="yes" name="previous-adoption" value="yes" required>
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="previous-adoption" value="no" required>
+              <label for="no">No</label>
+              <label for="who">If yes who?</label>
+              <input id="who" name="who">
+            </fieldset>
+            <fieldset class="push-1-2">
+              <legend class="push-1-8 pad-t not-bold">Have you ever surrendered or given up an animal?</legend>
+              <input type="radio" id="surrender-yes" name="surrender" value="yes" required>
+              <label for="surrender-yes">Yes</label>
+              <input type="radio" id="surrender-no" name="surrender" value="no" required>
+              <label for="surrender-no">No</label>
+              <label for="surrendered">If yes: How long ago, whoo took your animal and why did you surrender the animal?</label>
+              <input id="surrendered" name="surrendered">
+            </fieldset>
+            <fieldset class="push-1-2">
+              <legend class="push-1-8 pad-t not-bold">Are you 18 years of age or older?</legend>
+              <input type="radio" id="age-yes" name="age" value="yes" required>
+              <label for="age-yes">Yes</label>
+              <input type="radio" id="age-no" name="age" value="no" required>
+              <label for="age-no">No</label>
+            </fieldset>
+            <fieldset class="push-1-2">
+              <legend class="push-1-8 pad-t not-bold">Are you a home owner?</legend>
+              <input type="radio" id="home-yes" name="home" value="yes" required>
+              <label for="home-yes">Yes</label>
+              <input type="radio" id="home-no" name="home" value="no" required>
+              <label for="home-no">No</label>
+            </fieldset>
+
+            <label for="care">Who will be primarily responsible for the pet's care?</label>
+            <input id="care" name="care" required>
+            <label for="adults">Number of adults in household</label>
+            <input id="adults" name="adults" required>
+            <label for="kids">Number and ages of children in household</label>
+            <input id="kids" name="kids" required>
+            <label for="away">How many hours a day are you and your family away from home?</label>
+            <input id="away" name="away" required>
+
+          </form>
+        </div>
+      </section>
+    </article>
   </main>
 
   <footer role="contentinfo" id="footer" tabindex="0" class="gutter pad-b-1-2 pad-t-1-2">
     <p class="push-0 bold pad-b-1-2">© 2019 Misty Creek Dog Rescue all rights reserved</p>
     <i class="icon i-1">
       <img class="img-flex" src="images/facebook.svg" alt="">
-    </i>
-    <i class="icon i-1">
-      <img class="img-flex" src="images/twitter.svg" alt="">
-    </i>
-    <i class="icon i-1">
-      <img class="img-flex" src="images/instagram.svg" alt="">
     </i>
   </footer>
 

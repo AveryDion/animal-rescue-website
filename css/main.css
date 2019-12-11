@@ -90,9 +90,18 @@ dt {
   width: 100px;
 }
 
-footer{
+footer {
   background-color: #448a87;
   color: #fff;
+}
+
+input {
+  border: 1px solid #448a87;
+  width: 50%;
+}
+
+fieldset {
+  border: 0;
 }
 
 @media only screen and (min-width: 38em) {
