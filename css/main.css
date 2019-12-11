@@ -22,6 +22,7 @@ header {
   display: block;
   text-decoration: none;
   color: #fff;
+  transition: all .5s linear;
 }
 
 .nav a:hover {
@@ -68,6 +69,7 @@ header {
 .btn {
   background-color: #448a87;
   border-color: #448a87;
+  transition: all .5s linear;
 }
 
 .btn:hover {
